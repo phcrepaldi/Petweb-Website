@@ -1,0 +1,524 @@
+
+
+body{
+    /*font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;*/
+    font: 15px Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+.button{
+    height: 38px;
+    background-color: #e8491d;
+    border: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 1px 3px 10px rgba(0,0,0,0.1);
+
+}
+
+
+.dark {
+    padding: 15px;
+    background-color: #35424a;
+    color: #fff;
+    margin-top: 70px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    
+}
+
+header{
+    background-color: #35424a;
+    color: white;
+    padding-top: 10px;
+    min-height: 50px;
+    border-bottom: #e8491d 3px solid;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    box-shadow: 1px 3px 20px rgba(0,0,0,0.5);
+}
+
+/* .header--fixo{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    text-shadow: 1px 3px 10px rgba(0,0,0,0.8);
+} */
+
+header a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header li{
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header #branding{
+    float: left;
+    margin-bottom: 10px;
+}
+
+header #branding h1{
+    margin: 0;
+}
+
+header nav{
+    float: right;
+    margin-top: 20px;
+}
+
+header .highlight, header .current a{
+    color: #e8491d;
+    font-weight: bold;
+}
+
+header a:hover{
+    color: #e8491d;
+    font-weight: bold;
+}
+
+#showcase{
+    min-height: 400px;
+    background: url(../img/hero.jpg) 0 -100px; /* DEIXAMOS O URL VAZIO
+    ATÉ ENCONTRAR A IMAGEM CERTA */
+    text-align: center;
+    text-shadow: 1px 3px 3px rgba(0,0,0,0.8);
+    color: white;
+}
+
+#showcase h1{
+    margin-top: 100px;
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+#showcase p{
+    font-size: 20px;
+}
+
+#newsletter{
+    padding: 15px;
+    color: white;
+    background-color: #35424a;
+}
+
+#newsletter h1{
+    float: left;
+}
+
+#newsletter form{
+    float: right;
+    margin-top: 15px;
+}
+
+#newsletter input[type="email"]{
+    padding: 4px;
+    height: 30px;
+    width: 250px;
+}
+
+#boxes{
+    margin-top: 20px;
+}
+
+#boxes .box{
+    float: left;
+    text-align: center;
+    width: 25%;
+    padding: 20px;
+    margin-left: 60px;
+}
+
+#boxes .box img{
+    height: 100px;
+}
+
+aside#sidebar{
+    float: right;
+    width: 30%;
+    margin-top: 10px;
+}
+
+/*aside#sidebar .quote input, aside#sidebar .quote textarea{
+    width: 90%;
+    padding: 5px;
+}*/
+
+article#main_col{
+    float: left;
+    width: 65%;
+}
+
+ul#services li{
+    list-style: none;
+    padding: 20px;
+    border: #ccc solid 1px;
+    margin-bottom: 5px;
+    background-color: #e6e6e6;
+}
+
+/*footer{
+    padding: 20px;
+    margin-top: 20px;
+    color: white;
+    background-color: #e8491d;
+    text-align: center;
+}*/
+
+@media(max-width: 768px){
+    header #branding, header nav, header nav li,
+    #newsletter h1, #newsletter form, #boxes .box,
+    article#main_col, aside#sidebar{
+        float: none;
+        text-align: center;
+        width: 100%;
+    } 
+
+    header{
+        padding-bottom: 20px;
+    }
+
+    #showcase h1{
+        margin-top: 40px;
+    }
+
+    #newsletter button, .quote button{
+        display: block;
+        width: 100%;
+    }
+
+    #newsletter form input[type="email"],
+    .quote input, .quote textarea{
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    
+    #boxes .box{
+        width: 100%;
+        padding: 0;
+        margin: 30px 0 30px 0;
+    }
+
+}
+
+footer{
+    background-color: #35424a;
+    color: white;
+    min-height: 70px;
+}
+
+
+
+.row{
+	/*display: flex;
+	flex-wrap: wrap;
+    margin-left: 5%;
+    margin-top: -20px;
+    */
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-left: 14%;
+    margin-top: -20px;
+}
+
+#logo_footer{
+text-align: center;
+padding-top: 80px;
+}
+
+#cols{
+    margin-left: 3%;
+}
+
+
+.footer-col{
+   width: 20%;
+   padding: 30px 10px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #c44800;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 55px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+footer .copy{
+    padding: 1px;
+    margin-top: 1px;
+    color: white;
+    background-color: #e8491d;
+    text-align: center;
+}
+
+
+@media(max-width: 1200px){
+.footer-col{
+    width: 40%;
+  }
+  #cols{
+    margin-left: 0;
+}
+}
+
+@media(max-width: 650px){
+    .footer-col{
+      width: 100%;
+      text-align: center;
+}
+.footer-col ul li{
+    list-style-type: none;
+}
+
+   .footer-col h4::before{
+	content: '';
+	position: absolute;
+	bottom: -10px;
+    left: auto;
+    margin-left: 15px;
+	background-color: #c44800;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+    }
+}
+
+
+
+.servicos{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.servicos .servico{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.servicos .servico h3{
+    margin-top: 10px;
+}
+
+.servicos .servico img{
+    width: 100%;
+    max-width: 80px;
+}
+
+@media screen and (min-width:768px){
+
+    .servicos{
+        align-items: flex-start;
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-width: 1000px;
+        margin: 100px auto;
+        margin-top: 60px;
+    }
+
+    .servicos h2{
+        text-align: center;
+        width: 100%;
+    }
+
+    .servicos .servico{
+        flex: 1 1 300px;
+        padding: 0 10px;
+    }
+
+
+    #main_col{
+        padding: 20px 0 30px 0;
+    }
+
+
+    .contacto {
+        margin-top: 50px;
+        float: left;
+        width: 65%;
+        display: block;
+        flex-flow: row;
+        align-items: left;
+        text-align: left;
+    }
+
+    .contacto a{
+        display: block;
+        color: inherit;
+    }
+
+}
+
+#main_col{
+    margin-top: -25px;
+}
+
+
+.form{
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    margin-bottom: 30px;
+    
+}
+
+input, select{
+    width: 100%;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    height: 35px;
+    border: 0;
+    box-shadow: 1px 3px 10px rgba(0,0,0,0.1);
+
+}
+
+textarea{
+    height: 300px;
+    margin-bottom: 30px;
+    border:0;
+    border-radius: 5px;
+    box-shadow: 1px 3px 10px rgba(0,0,0,0.1);
+
+}
+
+.icon_contacto:last-child{
+    margin-top: 10px;
+}
+
+/*footer{
+    text-align: center;
+    padding: 10px;
+    background-color: #13a9ba;
+    color: #f1f1f1;
+    margin-top: 58px;
+}*/
+
+.button_send{
+    position: relative;
+    margin-left: 81%;
+    width: 20%;
+    font-size: 12px;
+    border: none;
+    outline: none;
+    background-color: #e8491d;
+    color: white;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 6px;
+}
+
+.button_send:hover{
+    background-color: #555;
+}
+
+
+.sobre{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    text-align: center;
+    background-color: #e8491d;
+    color: white;
+    padding-bottom: 15px;
+}
+
+.sobre p{
+    margin-bottom: 2em;
+    padding: 0 100px 0 100px;
+    max-width: 1000px;
+}
+
+#showcase_sobre{
+    min-height: 398px;
+    background: url(../img/hero_sobre.jpg) no-repeat 0 -100px;
+    text-align: center;
+    text-shadow: 1px 3px 3px rgba(0,0,0,0.8);
+    color: white;
+}
+
+#showcase_sobre h1{
+    margin-top: 100px;
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+#showcase_sobre p{
+    font-size: 20px;
+}
+
+h4 {
+    font-weight: 500;
+}
