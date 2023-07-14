@@ -1,4 +1,4 @@
-<p><img src="pet.jpeg" alt="Pet Image" width="100"></p>
+<p><img src="pet.jpeg" alt="Pet Image" width="120"></p>
 
 # PetWeb
 <p align="center">
