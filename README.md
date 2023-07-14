@@ -1,12 +1,10 @@
 <p><img src="pet.jpeg" alt="Pet Image" width="120"></p>
-
-# PetWeb
 <p align="center">
  <img src="https://img.shields.io/static/v1?label=Behance&message=phcrepaldi&color=199ca8&labelColor=000000" alt="phcrepaldi" />
  <img src="https://img.shields.io/static/v1?label=Type&message=Webdesign&color=199ca8&labelColor=000000" alt="Webdesign" />
 </p>
 
-> PetWeb
+>PetWeb
 
 PetWeb is a website project for a pet shop, featuring pages dedicated to dogs, cats, prices, and offers. It also includes a contact page with a form and information for product delivery. The project was created from scratch, encompassing both design and front-end development.
 
