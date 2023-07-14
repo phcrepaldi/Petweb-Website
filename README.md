@@ -1,4 +1,5 @@
-![Alt text](pet.jpeg | width=125)
+<p><img src="pet.jpeg" alt="Pet Image" width="100"></p>
+
 # PetWeb
 <p align="center">
  <img src="https://img.shields.io/static/v1?label=Behance&message=phcrepaldi&color=199ca8&labelColor=000000" alt="phcrepaldi" />
